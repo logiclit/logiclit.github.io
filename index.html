@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initail-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Logiclit Inc. - iOS Application Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    window.onload = function() {
+        var user = ['de', 've', 'lo', 'per'];
+        var domain = ['lo', 'gi', 'cl', 'it'];
+        var tld = ['c', 'o', 'm'];
+        var email = user.join('') + '@' + domain.join('') + '.' + tld.join('');
+        document.getElementById('email').textContent = email;
+    };
+</script>
+<body>
+    <nav>
+        <div class="logo">Logiclit Inc.</div>
+    </nav>
+    <section class="description">
+        <div class="description-container">
+            <div class="column-left">
+                <img src="img/logo.png" alt="Logiclit logo">
+                <p>We are a software development company that specializes in iOS development. We work on architecture,
+                    maintenance, creation, and deployment of high quality iOS apps.</p>
+                <p class="description-email">E-mail us at <span id="email"></span></p>
+            </div>
+            <div class="column-right">
+                <img src="img/iphone.png" alt="illustration of a person using an iphone" class="description-image">
+            </div>
+    </section>
+</body>
+</html>
